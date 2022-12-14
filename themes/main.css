@@ -1,0 +1,74 @@
+@shadow cr-toolbar { 
+  :host {
+    background-color: #000000;
+    color: #5f6368;
+  }
+  #leftContent #menuButton {
+    color: #df3079;
+  }
+  #centeredContent #search {
+    color: #000000;
+  }
+}
+
+@shadow cr-toggle {
+  :host {
+    /*
+    --cr-toggle-checked-bar-color:var(--google-blue-300);
+    --cr-toggle-checked-button-color:var(--google-blue-300);
+    --cr-toggle-checked-ripple-color:rgba(var(--google-blue-300-rgb), .4);
+    --cr-toggle-unchecked-bar-color:var(--google-grey-500);
+    --cr-toggle-unchecked-button-color:var(--google-grey-300);
+    --cr-toggle-unchecked-ripple-color:rgba(var(--google-grey-300-rgb), .4)
+    */
+    --cr-toggle-checked-bar-color: #df3079;
+    --cr-toggle-checked-button-color: #df3079;
+    --cr-toggle-checked-ripple-color: rgba(223, 48, 121, .4);
+  }
+}
+
+@shadow cr-toolbar-search-field {
+  #icon, #searchTerm {
+    background-color: #000000;
+  }
+}
+
+@shadow extensions-toolbar {
+  :host {
+    background-color: #a1b2c3;
+  }
+}
+
+/* potenial colours: #202124 #5f6368 */
+html, #header {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+a {
+  color: #df3079;
+}
+
+a:visited, span.blurb-warning, td.label {
+  color: #00a67d;
+}
+
+select.experiment-select, select.experiment-enable-disable, #experiment-reset-all {
+  background-color: #df3079;
+  color: #ffffff;
+  border: none;
+}
+
+textarea.experiment-origin-list-value, #search {
+  background-color: #131516;
+  color: #ffffff;
+  border: none
+}
+
+div div span, #inner, #company, #copyright {
+  color: #5f6368;
+}

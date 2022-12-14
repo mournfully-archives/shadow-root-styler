@@ -41,7 +41,7 @@
 
 @shadow chromedash-roadmap-milestone-card {
   :host {
-    background: #222;
+    background: #a1b2c3;
   }
   .release {
     background: #333;
