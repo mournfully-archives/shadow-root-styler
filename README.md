@@ -1,10 +1,14 @@
 ### TL;DR 
 
-I forgot that chrome respects prefers-dark-theme and thought I had to enable the flag `chrome://flags/#extensions-on-chrome-urls` and make my own extension to not get flashbanged whenever I tried to look at my history. :facepalm:
+I wanted full dark mode coverage in my (chrome) browser. So, I did all the basic things like getting `DarkReader`, but I soon realized that it wasn't perfect. It would at times mess up a websites colours. More importantly it wasn't able to affect chrome's protected sites (`chrome://*/*`).
 
-So, I spent a couple days learning about css and shadow-roots, and in the process stumbled upon this [darkreader github issue](https://github.com/darkreader/darkreader/issues/2286) which lead to me discovering the [xraystyler](https://github.com/tophf/XRayStyler) repo.
+So, I found the flag `chrome://flags/#extensions-on-chrome-urls` and went about trying to get an extension to inject dark mode css for me. I tried quite a few extensions which either continued to refuse to affect chrome urls or weren't able to inject css into some elements.
 
-And then I forked xraystyler, explicitly gave my fork permission to modify `chrome://*/*`, and spent way too much time messing around with css and shadow-roots to make a custom dark theme for myself.
+And during that time I learnt about `shadow roots` and managed to stumble upon a [darkreader github issue](https://github.com/darkreader/darkreader/issues/2286) which pointed me towards a proof of concept extension that could affect them called [xraystyler](https://github.com/tophf/XRayStyler).
+
+I then forked that repo, and played with it before giving my fork explicit permission to modify a few `chrome://*/*` urls. And spent way too much time learning about `css`, inspecting the code of `chrome://*/*` sites to try and get a custom dark theme made.
+
+Which was when I remembered that I had seen `chrome://*/*` sites in dark mode before. And realizing that I could've just started chrome with the flag `prefers-dark-theme`. Although, the webstore still holds out as one of the last few places I don't have dark mode yet. Nevertheless, I basically wasted a week of my life.
 
 ### Requirements
 
